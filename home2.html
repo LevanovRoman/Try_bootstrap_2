@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SV-Bootstrap</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<nav class="navbar fixed-up navbar-expand-lg navbar-light bg-info">
+  <div class="container">
+      <a href="#" class="navbar-brand">Северная Верфь</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false">
+      	<span class="navbar-toggler-icon"></span>
+      </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+  	<ul class="navbar-nav mr-auto mb-2">
+  		<li class="nav-item">
+  			<a href="{% url 'home' %}" class="nav-link">Home</a>
+  		</li>
+  		<li class="nav-item">
+  			<a href="{% url 'user_data' %}" class="nav-link">Данные AD</a>
+  		</li>
+  		<li class="nav-item">
+  			<a href="{% url 'user_mail' %}" class="nav-link">Почта</a>
+  		</li>
+  		<li class="nav-item">
+  			<a href="{% url 'logout' %}" class="nav-link">Logout</a>
+		</li>
+		<li class="nav-item">
+  			<a href="{% url 'django_auth_adfs:login' %}" class="nav-link" style="margin-left: 150px">Login</a>
+  		</li>
+		<li class="nav-item">
+  			<a href="{% url 'django_auth_adfs:login-no-sso' %}" class="nav-link">Login (no SSO)</a>
+  		</li>
+		<li class="nav-item">
+  			<a href="{% url 'django_auth_adfs:logout' %}" class="nav-link">Logout</a>
+  		</li>
+  	</ul>
+  </div>
+  	<form action="" class="d-flex">
+  		<input type="search" placeholder="Search" class="form-control mr-2">
+  		<button class="btn btn-outline-success">Search</button>
+  	</form>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      Одна из трёх колонок
+      <h1 class="display-1">display 1 heading</h1>
+      <h1 class="display-4">display 4 heading</h1>
+      <h1 class="display-6">display 6 heading</h1>
+      <p class="display-6">p tag display 6 class</p>
+    </div>
+    <div class="col-sm-4">
+      Одна из трёх колонок
+      <h1>this is an h1</h1>
+      <h2>this is an h2</h2>
+      <h3>this is an h3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="col-sm-2">
+      Одна из трёх колонок
+    </div>
+  </div>
+</div>
+<hr>
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+      <p class="lead text-center">lead text-center</p>
+      <p class="lead text-end">text-end</p>
+      <p class="lead">lead</p>
+    </div>
+    <div class="col"> 
+      2 of 2
+      <p class="text-decoration-underline">text-decoration-underline</p>
+      <p class="text-decoration-line-through">text-decoration-line-through</p>
+      <p class="fw-bold">this is a bold text</p>
+      <small>this is a small text</small>
+    </div>
+  </div>
+  <hr>
+<hr>
+  <div class="row">
+    <div class="col">
+      1 of 3
+     <p class="text-primary">text-primary</p> 
+     <p class="text-secondary">text-secondary</p> 
+     <p class="text-info">text-info</p> 
+     <p class="text-info-emphasis">text-info-emphasis</p> 
+     <p class="text-warning">text-warning</p> 
+     <p class="text-success">text-success</p> 
+     <p class="text-danger">text-danger</p> 
+     <p class="text-danger-emphasis">text-danger-emphasis</p> 
+     <p class="text-muted">text-muted</p> 
+    </div>
+    <div class="col">
+      2 of 3
+      <p class="text-white bg-primary">white text on primary bg</p>
+      <p class="text-white bg-secondary">white text on secondary bg</p>
+      <p class="text-light bg-danger">white text on danger bg</p>
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <hr>
+<hr>
+  <div class="row">
+  	<div class="col">
+  		<button class="btn btn-primary"> primary button</button>
+  		<button class="btn btn-secondary"> secondary button</button>
+  	</div>
+  	<div class="col">
+  		<a href="#" class="btn btn-info">info anchor tag</a>
+  		<a href="#" class="btn btn-success">success anchor tag</a>
+  	</div>
+  	<div class="col">
+  		<button class="btn btn-lg btn-danger">large danger button</button>
+  		<button class="btn btn-sm btn-warning">small warning button</button>
+  	</div>
+  </div>
+    <hr>
+<hr>
+  <div class="row">
+  	<div class="col">
+  		<button class="btn btn-outline-primary">outlined primary button</button>
+  		<button class="btn btn-outline-secondary btn-lg">large outlined secondary button</button>
+  	</div>
+  	<div class="col">
+  		 <div class="btn-group">
+  		 	<a href="#" class="btn btn-primary">button 1</a>
+  		 	<a href="#" class="btn btn-warning">button 2</a>
+  		 	<a href="#" class="btn btn-success">button 3</a>
+  		 </div>
+  	</div>
+  </div>
+      <hr>
+<hr>
+<div class="row">
+	margin and padding
+	<div class="col">
+		<div class="bg-primary m-1 p-1">small margin and padding</div>
+		<div class="bg-primary m-5 p-5">large margin and padding</div>
+		<div class="bg-primary my-3 px-5">margin in Y direction, padding in X direction</div>
+		<div class="bg-primary mt-3 mb-4 ms-5 me-1 ps-5 pt-4 pe-2 pb-1">margin and padding for each direction</div>
+	</div>
+</div>
+      <hr>
+<hr>
+<div class="row">
+	borders
+	<div class="col">
+		<div class="m-3 p-3 border">default border</div>
+		<div class="m-3 p-3 border-top border-end">individual border</div>
+		<div class="m-3 p-3 border-start border-success">border success colour at start</div>
+		<div class="m-3 p-3 border-start border-danger border-5">thicker border</div>
+		<div class="m-3 p-3 rounded border border-5">rounded corners</div>
+		<div class="m-3 p-3 rounded-pill border border-5">rounded pill corners</div>
+
+	</div>
+	<div class="col"></div>
+</div>
+      <hr>
+<hr>
+<div class="row">
+	box shadow
+	<div class="col">
+		<div class="m-3 p-3 shadow-sm">element with small box shadow</div>
+		<div class="m-3 p-3 shadow-sm">element with small box shadow</div>
+		<div class="m-3 p-3 shadow">element with box shadow</div>
+	</div>
+</div>
+      <hr>
+<hr>
+<div class="row">
+	font weight
+	<div class="col">
+		<p class="fw-bold">bold text</p>
+		<p class="fw-bolder">bolder text</p>
+		<p>normal text</p>
+		<p class="fw-light">light text</p>
+		<p class="fst-italic">italic text</p>
+		<p class="fst-italic fw-light">italic light text</p>
+	</div>
+</div>
+</div>
+
+
+<!-- {% block content %} -->
+<!-- <h1 style="margin-left:300px">Привет, {{ user.username }}</h1> -->
+    <!-- {% endblock %} -->
+<script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+<!--  -->
